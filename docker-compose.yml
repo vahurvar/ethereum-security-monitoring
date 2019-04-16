@@ -1,0 +1,41 @@
+version: '2'
+services:
+
+  rabbit:
+    build: rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+    restart: always
+
+  mythril-wrapper:
+    build: mythril-wrapper
+    depends_on:
+      - rabbit
+    restart: always
+
+  oyente-wrapper:
+    build: oyente-wrapper
+    depends_on:
+      - rabbit
+    restart: always
+
+  ethereum-listener:
+    build: ethereum-listener
+    depends_on:
+      - rabbit
+    restart: always
+
+  front-end:
+    build: front-end
+    ports:
+      - '5000:5000'
+    restart: always
+
+  mongo:
+    build: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - './mongo/data:/data/db'
+

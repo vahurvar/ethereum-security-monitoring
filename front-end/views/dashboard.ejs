@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h1 allign="center"class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome </p>
+<table>
+    <tr>
+      <th>ID</th>
+      <th>Contract ID</th>
+      <th>Result</th>
+      <th>Timestamp</th>
+
+    </tr>
+    <% for(var i=0; i < todo.length; i++){%>
+        <tr>
+            <th><%= todo[i]._id%></th>
+            <th><%= todo[i].contractId%></th>
+            <th><%= todo[i].result%></th>
+            <th><%= todo[i].timestamp%></th>
+        </tr>
+
+   <% }%>
+
+  </table>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+</body>

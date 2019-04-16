@@ -1,0 +1,4 @@
+FROM mongo:latest
+ENV MONGODB_USER=user
+ENV MONGODB_PASS=password
+EXPOSE 27017

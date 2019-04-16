@@ -1,0 +1,24 @@
+{
+  "name": "blockchain_project",
+  "version": "1.0.0",
+  "description": "SmartContractAnalyzer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thekings",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.15.6",
+    "mongodb": "^3.2.2",
+    "mongoose": "^5.4.22",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
