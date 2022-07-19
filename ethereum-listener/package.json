@@ -11,7 +11,7 @@
   "dependencies": {
     "amqplib": "^0.5.3",
     "axios": "^0.18.0",
-    "properties-reader": "0.0.16",
+    "properties-reader": "2.2.0",
     "web3": "^1.0.0-beta.49"
   }
 }
