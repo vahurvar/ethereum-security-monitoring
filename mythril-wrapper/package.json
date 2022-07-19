@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.5.3",
-    "properties-reader": "0.0.16"
+    "properties-reader": "2.2.0"
   }
 }
